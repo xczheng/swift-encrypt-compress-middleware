@@ -13,9 +13,10 @@ Install the middleware first:
 
 Compress middleware and encrypt middleware can be used separately or combined.
 
-Insert the middleware in your Swift proxy server configuration:
+Configure:
 
 For example, put the compress and/or encrypt before the app proxy-server
+
     pipeline = catch_errors gatekeeper healthcheck proxy-logging cache bulk tempurl ratelimit crossdomain container_sync tempauth staticweb container-quotas account-quotas slo dlo versioned_writes proxy-logging compress encrypt proxy-server
 
 Then add the filters here:
