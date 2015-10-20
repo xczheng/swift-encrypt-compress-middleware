@@ -8,6 +8,7 @@ This compression and encryption is transparent to end users.
 Install:
 
 Install the middleware first:
+
     pip install -r requirements.txt
     python setup.py install
 
